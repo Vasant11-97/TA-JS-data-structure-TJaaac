@@ -18,18 +18,18 @@ let newUser = user;
 
 2. Answer the following with reason:
 
-- `user == newUser;` // output and reason
-- `user === newUser;`
-- `user.name === newUser.name;`
-- `user.name == newUser.name;`
-- `user.sibling == newUser.sibling;`
-- `user.sibling === newUser.sibling;`
-- `user.sibling == allBrothers;`
-- `user.sibling === allBrothers;`
-- `brothersCopy === allBrothers;`
-- `brothersCopy == allBrothers;`
-- `brothersCopy == user.sibling;`
-- `brothersCopy === user.sibling;`
-- `brothersCopy[0] === user.sibling[0];`
-- `brothersCopy[1] === user.sibling[1];`
-- `user.sibling[1] === newUser.sibling[1];`
+- `user == newUser;` // true because newuser is using the memory address of user.
+- `user === newUser;` // true because it is called by pass by reference.
+- `user.name === newUser.name;` // true because it is called by pass by reference.
+- `user.name == newUser.name;` // true because it is called by pass by reference.
+- `user.sibling == newUser.sibling;` // true because it is called by pass by reference.
+- `user.sibling === newUser.sibling;` // true because it is called by pass by reference.
+- `user.sibling == allBrothers;` // false because both are different variables and the data dosen't match because of paas by value.
+- `user.sibling === allBrothers;` // false because both are different variables and the data dosen't match because of paas by value.
+- `brothersCopy === allBrothers;` // false because both are different variables and the data dosen't match because of paas by value.
+- `brothersCopy == allBrothers;` // false because both are different variables and the data dosen't match because of paas by value.
+- `brothersCopy == user.sibling;` // true because it is called by pass by reference.
+- `brothersCopy === user.sibling;` // true because it is called by pass by reference.
+- `brothersCopy[0] === user.sibling[0];` // true because it is called by pass by reference.
+- `brothersCopy[1] === user.sibling[1];` // true because it is called by pass by reference.
+- `user.sibling[1] === newUser.sibling[1];` // true because it is called by pass by reference.
